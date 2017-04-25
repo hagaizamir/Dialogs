@@ -11,24 +11,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pick Time"
-        android:layout_marginRight="0dp"
+        android:layout_marginRight="8dp"
         android:onClick="pickTheTime"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="0dp" />
+        android:layout_marginBottom="16dp" />
 
     <Button
         android:id="@+id/showStandard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="11dp"
         android:onClick="showStandardDialog"
+        android:text="Standards"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnPickTime" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="16dp"
+        android:onClick="showListDialog"
+        android:text="Color Selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/showStandard" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="clip_horizontal"
+        android:text="Toppings"
+        android:onClick="toppings"
+        tools:layout_editor_absoluteY="139dp"
         android:layout_marginLeft="0dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/btnPickTime"
         android:layout_marginRight="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="0dp"
-        app:layout_constraintHorizontal_bias="0.502" />
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

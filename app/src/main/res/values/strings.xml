@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Dialogs</string>
+    <string-array name="toppings">
+        <item>Olives</item>
+        <item>Tomato</item>
+        <item>Lettuce</item>
+    </string-array>
 </resources>
